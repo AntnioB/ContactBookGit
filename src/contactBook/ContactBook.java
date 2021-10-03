@@ -92,7 +92,7 @@ public class ContactBook {
     }
 
     public String getContactName(int phone){
-        for(int i = counter-1; i>=0;i--){
+        for(int i = 0; i>=counter-1;i--){
             if(phone == contacts[i].getPhone())
                 return contacts[i].getName();
         }
