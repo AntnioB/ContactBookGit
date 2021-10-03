@@ -91,9 +91,20 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
-    //TODO
-    public boolean hasSamePhone(){
-        return false;
-    }
 
+    public boolean hasSamePhone(){
+        for (int i = 0; i < counter; i++) {
+            for (int j = i+1; j < counter; j++) {
+                if(contacts[i].getPhone() == contacts[j].getPhone()) return true;
+            }
+        }
+        return false;
+      
+    public String getContactName(int phone){
+        for(int i = 0; i<=counter-1;i++){
+            if(phone == contacts[i].getPhone())
+                return contacts[i].getName();
+        }
+        return null;
+    }
 }
