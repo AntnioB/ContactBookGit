@@ -14,7 +14,7 @@ public class Main {
     public static final String SET_EMAIL      = "SE";
     public static final String LIST_CONTACTS  = "LC";
     public static final String QUIT           = "Q";
-    public static final String GET_CONTACT    = "GN";
+    public static final String GET_NAME    = "GN";
 
     //Constantes que definem as mensagens para o utilizador
     public static final String CONTACT_EXISTS = "contactBook.Contact already exists.";
@@ -55,7 +55,7 @@ public class Main {
                 case LIST_CONTACTS:
                     listAllContacts(cBook);
                     break;
-                case GET_CONTACT:
+                case GET_NAME:
                     getContact(in, cBook);
                     break;
                 default:
