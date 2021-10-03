@@ -1,7 +1,5 @@
 package contactBook;
 
-import contactBook.Contact;
-
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -91,6 +89,15 @@ public class ContactBook {
     //Pre: hasNext()
     public Contact next() {
         return contacts[currentContact++];
+    }
+
+    /*
+    TODO
+    estava a pensar que podia se utilizar o iterador para encontrar o contacto mais velho
+    e retorna-se o o nome
+     */
+    public String getContactName(int phone){
+        return null;
     }
 
 }
