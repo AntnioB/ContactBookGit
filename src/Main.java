@@ -64,6 +64,7 @@ public class Main {
                     break;
                 case EQUAL_PHONE:
                     checkSamePhone(cBook);
+                    break;
                 case GET_NAME:
                     getContact(in, cBook);
                     break;
