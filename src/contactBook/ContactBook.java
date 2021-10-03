@@ -91,6 +91,7 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+
     public boolean hasSamePhone(){
         for (int i = 0; i < counter; i++) {
             for (int j = i+1; j < counter; j++) {
@@ -98,6 +99,12 @@ public class ContactBook {
             }
         }
         return false;
+      
+    public String getContactName(int phone){
+        for(int i = 0; i<=counter-1;i++){
+            if(phone == contacts[i].getPhone())
+                return contacts[i].getName();
+        }
+        return null;
     }
-
 }
