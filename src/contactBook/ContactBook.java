@@ -91,12 +91,11 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
-    /*
-    TODO
-    estava a pensar que podia se utilizar o iterador para encontrar o contacto mais velho
-    e retorna-se o o nome
-     */
     public String getContactName(int phone){
+        for(int i = counter-1; i>=0;i--){
+            if(phone == contacts[i].getPhone())
+                return contacts[i].getName();
+        }
         return null;
     }
 
