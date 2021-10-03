@@ -1,7 +1,5 @@
 package contactBook;
 
-import contactBook.Contact;
-
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -91,6 +89,14 @@ public class ContactBook {
     //Pre: hasNext()
     public Contact next() {
         return contacts[currentContact++];
+    }
+
+    public String getContactName(int phone){
+        for(int i = 0; i<=counter-1;i++){
+            if(phone == contacts[i].getPhone())
+                return contacts[i].getName();
+        }
+        return null;
     }
 
 }
